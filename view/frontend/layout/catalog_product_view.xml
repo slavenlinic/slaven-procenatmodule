@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+    <referenceContainer name="product.info.media">
+        <block name="delivery_message"
+               class="Magento\Catalog\Block\Product\View"
+               template="Slaven_ProcenatModule::delivery_message.phtml"
+               before="product.info.media.image">
+            <arguments>
+                <argument name="view_model" xsi:type="object">Slaven\ProcenatModule\ViewModel\DeliveryMessage</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+</body>
+</page>
